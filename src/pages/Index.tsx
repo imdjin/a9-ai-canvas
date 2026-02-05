@@ -272,8 +272,11 @@ const Index = () => {
                 <span className="text-sm text-primary font-medium">我们的愿景</span>
               </div>
               
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-foreground leading-tight">
-                做产品用 <span className="text-primary font-black">Lovable</span>，卖产品用 <span className="text-primary font-black">A9</span>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+                做产品用 <span className="text-foreground font-bold">Lovable</span>
+              </p>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground leading-tight">
+                卖产品用 <span className="text-primary font-black">A9</span>
               </h2>
               <p className="text-base md:text-lg lg:text-xl text-muted-foreground">
                 让卖产品像做产品一样简单
