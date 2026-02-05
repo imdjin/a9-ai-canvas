@@ -259,10 +259,10 @@ const Index = () => {
       {/* CTA Section */}
       {/* Vision Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-7xl mx-auto bg-vision-bg rounded-2xl p-12 md:p-16">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="max-w-7xl mx-auto bg-vision-bg rounded-2xl overflow-hidden">
+          <div className="grid md:grid-cols-2 items-center">
             {/* Left: Text content */}
-            <div className="text-center md:text-left md:pl-6 lg:pl-10">
+            <div className="text-center md:text-left p-12 md:p-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
                 <Sparkles className="h-4 w-4 text-primary" />
                 <span className="text-sm text-primary font-medium">我们的愿景</span>
@@ -277,11 +277,11 @@ const Index = () => {
             </div>
             
             {/* Right: Image */}
-            <div className="flex justify-center md:justify-end md:pr-6 lg:pr-10">
+            <div className="flex justify-end h-full">
               <img 
                 src={visionIllustration} 
                 alt="抽象流动丝带装饰图" 
-                className="w-full max-w-lg lg:max-w-xl rounded-2xl object-cover"
+                className="h-full w-full object-cover object-left"
               />
             </div>
           </div>
