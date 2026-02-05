@@ -49,6 +49,9 @@ export default {
         feature: {
           icon: "hsl(var(--feature-icon))",
         },
+        testimonial: {
+          bg: "hsl(var(--testimonial-bg))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
