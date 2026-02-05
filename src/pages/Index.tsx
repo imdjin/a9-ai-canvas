@@ -256,7 +256,7 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto bg-card border border-border rounded-2xl shadow-soft overflow-hidden">
+        <div className="max-w-5xl mx-auto bg-card border border-border rounded-xl overflow-hidden">
           <PricingTable />
         </div>
       </section>
@@ -285,7 +285,7 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto text-center bg-card border border-border rounded-2xl p-12 shadow-soft">
+        <div className="max-w-3xl mx-auto text-center bg-card border border-border rounded-xl p-12">
           <h2 className="text-3xl font-bold mb-4 text-foreground">
             准备好让你的产品被更多人看见了吗？
           </h2>

@@ -9,7 +9,7 @@
  
  export const TestimonialCard = ({ quote, author, role, avatar }: TestimonialCardProps) => {
    return (
-     <div className="p-6 bg-card border border-border rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300">
+    <div className="p-6 bg-card border border-border rounded-xl hover:border-primary/40 transition-all duration-300">
       <Quote className="h-8 w-8 text-accent-orange mb-4 opacity-80" />
        <p className="text-foreground leading-relaxed mb-6">{quote}</p>
        <div className="flex items-center gap-3">
