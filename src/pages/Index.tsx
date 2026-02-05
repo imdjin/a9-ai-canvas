@@ -89,11 +89,11 @@ const Index = () => {
       {/* Pain Points Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-destructive/10 border border-destructive/20 rounded-full mb-6">
-            <span className="text-sm text-destructive font-medium">创作者的困境</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-orange/10 border border-accent-orange/20 rounded-full mb-6">
+            <span className="text-sm text-accent-orange font-medium">创作者的困境</span>
           </div>
           <h2 className="text-3xl font-bold mb-4 text-foreground">
-            产品做出来了，<span className="text-destructive">但是怎么卖？</span>
+            产品做出来了，<span className="text-accent-orange">但是怎么卖？</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             在这个AI驱动的"一人创业公司"时代，产品构建已经被民主化，但营销能力的门槛依然很高
