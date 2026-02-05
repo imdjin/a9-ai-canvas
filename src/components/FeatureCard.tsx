@@ -10,8 +10,8 @@ export const FeatureCard = ({ icon: Icon, title, description }: FeatureCardProps
   return (
     <div className="group p-6 bg-transparent border border-foreground/20 rounded-xl hover:border-foreground/40 transition-all">
       <div className="flex items-start gap-4">
-        <div className="p-3 bg-foreground/10 rounded-lg group-hover:bg-foreground/20 transition-colors">
-          <Icon className="h-6 w-6 text-primary" />
+        <div className="p-3 bg-feature-icon/20 rounded-lg group-hover:bg-feature-icon/30 transition-colors">
+          <Icon className="h-6 w-6 text-feature-icon" />
         </div>
         <div className="flex-1">
           <h3 className="text-lg font-semibold mb-2 text-foreground">{title}</h3>
