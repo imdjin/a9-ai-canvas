@@ -109,10 +109,10 @@ const Index = () => {
 
       {/* Pain Points Header */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-6xl mx-auto bg-primary rounded-2xl p-10 md:p-14">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-4xl mx-auto bg-primary rounded-2xl p-10 md:p-12">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left: Text content */}
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left md:pl-4">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-foreground/10 border border-foreground/20 rounded-full mb-6">
                 <span className="text-sm text-foreground font-medium">创作者的困境</span>
               </div>
