@@ -57,6 +57,20 @@ const Index = () => {
             </div>
             <span className="text-xl font-bold text-foreground">A9</span>
           </div>
+          <nav className="hidden md:flex items-center gap-8">
+            <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              功能
+            </a>
+            <a href="#use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              使用场景
+            </a>
+            <a href="#testimonials" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              用户评价
+            </a>
+            <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              价格
+            </a>
+          </nav>
         </div>
       </header>
 
@@ -129,7 +143,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-20 bg-secondary/50">
+      <section id="features" className="container mx-auto px-4 py-20 bg-secondary/50">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-foreground">A9来帮你解决</h2>
         </div>
@@ -169,7 +183,7 @@ const Index = () => {
       </section>
 
       {/* Use Cases Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section id="use-cases" className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-foreground">典型使用场景</h2>
           <p className="text-muted-foreground">无论何种需求，A9 都能完美胜任</p>
@@ -200,7 +214,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="container mx-auto px-4 py-20 bg-primary-soft/10">
+      <section id="testimonials" className="container mx-auto px-4 py-20 bg-primary-soft/10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
             <span className="text-sm text-primary font-medium">用户评价</span>
@@ -221,7 +235,7 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section id="pricing" className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
             <span className="text-sm text-primary font-medium">价格方案</span>
