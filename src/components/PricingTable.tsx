@@ -94,7 +94,7 @@
                  rowIndex % 2 === 0 ? "bg-secondary/30" : "bg-background"
                }`}
              >
-               <td className="py-4 px-4 text-left font-medium text-foreground">
+              <td className="py-4 px-4 text-left text-sm text-muted-foreground">
                  {feature.name}
                </td>
                {feature.values.map((value, colIndex) => (
