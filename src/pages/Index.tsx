@@ -3,6 +3,7 @@ import avatarDavid from "@/assets/avatar-david.jpg";
 import avatarJessica from "@/assets/avatar-jessica.jpg";
 import avatarRyan from "@/assets/avatar-ryan.jpg";
 import avatarEmily from "@/assets/avatar-emily.jpg";
+import painPointIllustration from "@/assets/pain-point-illustration.png";
 import { ChatInput } from "@/components/ChatInput";
 import { FeatureCard } from "@/components/FeatureCard";
 import { UseCaseCard } from "@/components/UseCaseCard";
@@ -133,9 +134,11 @@ const Index = () => {
             
             {/* Right: Image placeholder */}
             <div className="flex justify-center md:justify-end">
-              <div className="w-full max-w-md aspect-square bg-foreground/10 rounded-xl flex items-center justify-center">
-                <span className="text-foreground/60 text-sm">配图区域</span>
-              </div>
+              <img 
+                src={painPointIllustration} 
+                alt="创作者在营销方面遇到的困境" 
+                className="w-full max-w-md rounded-xl object-cover"
+              />
             </div>
           </div>
         </div>
