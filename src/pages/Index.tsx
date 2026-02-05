@@ -96,7 +96,7 @@ const Index = () => {
             产品做出来了，<span className="text-accent-orange">但是怎么卖？</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            在这个AI驱动的"一人创业公司"时代，产品构建已经被民主化，但营销能力的门槛依然很高
+            用AI几分钟可以"做产品"，但如何"卖产品"？我们如何几分钟做一个能讲好故事的产品宣传片？
           </p>
         </div>
 
