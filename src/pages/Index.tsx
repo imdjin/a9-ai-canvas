@@ -6,7 +6,7 @@ import { PainPointCard } from "@/components/PainPointCard";
 import { SolutionCard } from "@/components/SolutionCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PricingTable } from "@/components/PricingTable";
-import { Sparkles, Zap, Target, Video, Rocket, TrendingUp } from "lucide-react";
+import { Sparkles, Zap, Target, Video, Rocket, TrendingUp, HelpCircle, Clock, Palette, Dice5 } from "lucide-react";
 import { toast } from "sonner";
 
 const testimonials = [
@@ -102,25 +102,25 @@ const Index = () => {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           <PainPointCard
-            icon="🤔"
+            icon={HelpCircle}
             title="策划能力之痛"
             subtitle="我不会说"
             description="我深知产品的每个细节，但不知道如何在1分钟内组织一个有吸引力、有逻辑、有说服力的叙事结构"
           />
           <PainPointCard
-            icon="⏰"
+            icon={Clock}
             title="效率瓶颈之痛"
             subtitle="我没得用，也没时间"
             description="从写脚本、录屏、剪辑、配乐到适配不同平台，整个流程可能消耗创始人一整天甚至数天的时间"
           />
           <PainPointCard
-            icon="🎨"
+            icon={Palette}
             title="专业壁垒之痛"
             subtitle="我做了，但看起来很业余"
             description="平台规则复杂、品牌感缺失、对视听语言陌生，导致营销物料看起来杂乱无章"
           />
           <PainPointCard
-            icon="🎲"
+            icon={Dice5}
             title="结果失控之痛"
             subtitle="工具给我的是惊喜，不是结果"
             description="现有AI视频工具结果不可控，需要二次加工。我需要的不是创意玩具，而是能稳定交付可发布成品的生产机器"
