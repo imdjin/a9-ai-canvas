@@ -51,6 +51,7 @@ export default {
         },
         testimonial: {
           bg: "hsl(var(--testimonial-bg))",
+          light: "hsl(var(--testimonial-bg-light))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
