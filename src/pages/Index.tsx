@@ -255,20 +255,22 @@ const Index = () => {
 
       {/* CTA Section */}
       {/* Vision Section */}
-      <section className="container mx-auto px-4 py-24 bg-secondary/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-8">
-            <Sparkles className="h-4 w-4 text-primary" />
-            <span className="text-sm text-primary font-medium">我们的愿景</span>
-          </div>
-          
-          <div className="space-y-6">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-              做产品用 <span className="bg-gradient-primary bg-clip-text text-transparent">Lovable</span>，卖产品用 <span className="bg-gradient-primary bg-clip-text text-transparent">A9</span>
-            </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground">
-              让卖产品像做产品一样简单
-            </p>
+      <section className="py-24 bg-gradient-primary-deep">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full mb-8">
+              <Sparkles className="h-4 w-4 text-primary-foreground" />
+              <span className="text-sm text-primary-foreground font-medium">我们的愿景</span>
+            </div>
+            
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
+                做产品用 <span className="text-primary">Lovable</span>，卖产品用 <span className="text-primary">A9</span>
+              </h2>
+              <p className="text-xl md:text-2xl text-primary-foreground/80">
+                让卖产品像做产品一样简单
+              </p>
+            </div>
           </div>
         </div>
       </section>
