@@ -22,6 +22,9 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          deep: "hsl(var(--primary-deep))",
+          warm: "hsl(var(--primary-warm))",
+          soft: "hsl(var(--primary-soft))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -50,6 +53,7 @@ export default {
       },
       backgroundImage: {
         'gradient-primary': 'linear-gradient(135deg, hsl(195, 100%, 60%), hsl(200, 100%, 65%))',
+        'gradient-primary-deep': 'linear-gradient(135deg, hsl(195, 100%, 60%), hsl(200, 80%, 35%))',
         'gradient-hero': 'linear-gradient(180deg, hsl(200, 30%, 98%), hsl(200, 20%, 96%))',
       },
       boxShadow: {
