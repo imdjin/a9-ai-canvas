@@ -128,85 +128,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Solution Section */}
-      <section className="container mx-auto px-4 py-20 bg-secondary/50">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
-            <Sparkles className="h-4 w-4 text-primary" />
-            <span className="text-sm text-primary font-medium">A9 的解决方案</span>
-          </div>
-          <h2 className="text-3xl font-bold mb-4 text-foreground">
-            让产品运营像产品构建一样<span className="bg-gradient-primary bg-clip-text text-transparent">简单</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            一个能理解你的产品、替你完成从策略到成品全流程的自动化营销协作者
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <SolutionCard
-            title="AI 产品理解引擎"
-            description="自动爬取和分析官网内容，提取产品核心价值、目标用户和差异化优势，无需人工总结"
-            highlight
-          />
-          <SolutionCard
-            title="营销框架脚本生成"
-            description="基于 AIDA、PAS 等经典营销框架，自动构建有吸引力的叙事结构和专业脚本"
-            highlight
-          />
-          <SolutionCard
-            title="智能视觉素材匹配"
-            description="根据脚本内容，从官网截图、产品演示中智能匹配或生成视觉素材"
-            highlight
-          />
-          <SolutionCard
-            title="品牌风格自动提取"
-            description="自动识别官网的色彩、字体、Logo，确保视频与品牌形象完美契合"
-          />
-          <SolutionCard
-            title="多平台自适应输出"
-            description="自动适配 Product Hunt、YouTube Shorts、TikTok 等平台规格要求"
-          />
-          <SolutionCard
-            title="秒级成品交付"
-            description="从输入URL到获得可发布成品，整个流程不超过2分钟，零学习成本"
-          />
-        </div>
-      </section>
-
-      {/* Use Cases Section */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-foreground">典型使用场景</h2>
-          <p className="text-muted-foreground">无论何种需求，A9 都能完美胜任</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <UseCaseCard
-            number="01"
-            title="产品首发"
-            description="在 Product Hunt、Hacker News 等平台发布时，用高质量宣传视频引爆关注度"
-          />
-          <UseCaseCard
-            number="02"
-            title="功能更新"
-            description="快速制作新功能介绍视频，通知现有用户，同时吸引潜在新用户"
-          />
-          <UseCaseCard
-            number="03"
-            title="增长获客"
-            description="在 TikTok、YouTube Shorts、Instagram Reels 等短视频平台进行低成本高效率的流量获取"
-          />
-          <UseCaseCard
-            number="04"
-            title="融资路演"
-            description="制作专业精炼的演示视频，在几分钟内向投资人清晰展示产品价值"
-          />
-        </div>
-      </section>
-
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 py-20 bg-secondary/50">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-foreground">A9来帮你解决</h2>
         </div>
@@ -241,6 +164,37 @@ const Index = () => {
             icon={Sparkles}
             title="AI优化"
             description="利用AI技术优化视频节奏、转场和视觉效果，让你的产品展示更加专业吸睛"
+          />
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4 text-foreground">典型使用场景</h2>
+          <p className="text-muted-foreground">无论何种需求，A9 都能完美胜任</p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <UseCaseCard
+            number="01"
+            title="产品首发"
+            description="在 Product Hunt、Hacker News 等平台发布时，用高质量宣传视频引爆关注度"
+          />
+          <UseCaseCard
+            number="02"
+            title="功能更新"
+            description="快速制作新功能介绍视频，通知现有用户，同时吸引潜在新用户"
+          />
+          <UseCaseCard
+            number="03"
+            title="增长获客"
+            description="在 TikTok、YouTube Shorts、Instagram Reels 等短视频平台进行低成本高效率的流量获取"
+          />
+          <UseCaseCard
+            number="04"
+            title="融资路演"
+            description="制作专业精炼的演示视频，在几分钟内向投资人清晰展示产品价值"
           />
         </div>
       </section>
