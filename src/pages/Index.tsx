@@ -174,6 +174,37 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Use Cases Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4 text-foreground">典型使用场景</h2>
+          <p className="text-muted-foreground">无论何种需求，A9 都能完美胜任</p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <UseCaseCard
+            number="01"
+            title="产品首发"
+            description="在 Product Hunt、Hacker News 等平台发布时，用高质量宣传视频引爆关注度"
+          />
+          <UseCaseCard
+            number="02"
+            title="功能更新"
+            description="快速制作新功能介绍视频，通知现有用户，同时吸引潜在新用户"
+          />
+          <UseCaseCard
+            number="03"
+            title="增长获客"
+            description="在 TikTok、YouTube Shorts、Instagram Reels 等短视频平台进行低成本高效率的流量获取"
+          />
+          <UseCaseCard
+            number="04"
+            title="融资路演"
+            description="制作专业精炼的演示视频，在几分钟内向投资人清晰展示产品价值"
+          />
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
@@ -252,37 +283,6 @@ const Index = () => {
 
         <div className="max-w-5xl mx-auto bg-card border border-border rounded-2xl shadow-soft overflow-hidden">
           <PricingTable />
-        </div>
-      </section>
-
-      {/* Use Cases Section */}
-      <section className="container mx-auto px-4 py-20 bg-secondary/30">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-foreground">典型使用场景</h2>
-          <p className="text-muted-foreground">无论何种需求，A9 都能完美胜任</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <UseCaseCard
-            number="01"
-            title="产品首发"
-            description="在 Product Hunt、Hacker News 等平台发布时，用高质量宣传视频引爆关注度"
-          />
-          <UseCaseCard
-            number="02"
-            title="功能更新"
-            description="快速制作新功能介绍视频，通知现有用户，同时吸引潜在新用户"
-          />
-          <UseCaseCard
-            number="03"
-            title="增长获客"
-            description="在 TikTok、YouTube Shorts、Instagram Reels 等短视频平台进行低成本高效率的流量获取"
-          />
-          <UseCaseCard
-            number="04"
-            title="融资路演"
-            description="制作专业精炼的演示视频，在几分钟内向投资人清晰展示产品价值"
-          />
         </div>
       </section>
 
