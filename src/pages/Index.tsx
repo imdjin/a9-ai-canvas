@@ -6,11 +6,10 @@ import avatarEmily from "@/assets/avatar-emily.jpg";
 import { ChatInput } from "@/components/ChatInput";
 import { FeatureCard } from "@/components/FeatureCard";
 import { UseCaseCard } from "@/components/UseCaseCard";
-import { PainPointCard } from "@/components/PainPointCard";
 import { SolutionCard } from "@/components/SolutionCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PricingTable } from "@/components/PricingTable";
-import { Sparkles, Zap, Target, Video, Rocket, TrendingUp, HelpCircle, Clock, Palette, Dice5 } from "lucide-react";
+import { Sparkles, Zap, Target, Video, Rocket, TrendingUp } from "lucide-react";
 import { toast } from "sonner";
 
 const testimonials = [
@@ -105,48 +104,6 @@ const Index = () => {
           </p>
 
           <ChatInput onSubmit={handleSubmit} isLoading={isLoading} />
-        </div>
-      </section>
-
-      {/* Pain Points Section */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-orange/10 border border-accent-orange/20 rounded-full mb-6">
-            <span className="text-sm text-accent-orange font-medium">创作者的困境</span>
-          </div>
-          <h2 className="text-3xl font-bold mb-4 text-foreground">
-            产品做出来了，<span className="text-accent-orange">但是怎么卖？</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            用AI几分钟可以"做产品"，但如何"卖产品"？我们如何几分钟做一个能讲好故事的产品宣传片？
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          <PainPointCard
-            icon={HelpCircle}
-            title="策划能力之痛"
-            subtitle="我不会说"
-            description="我深知产品的每个细节，但不知道如何在1分钟内组织一个有吸引力、有逻辑、有说服力的叙事结构"
-          />
-          <PainPointCard
-            icon={Clock}
-            title="效率瓶颈之痛"
-            subtitle="我没得用，也没时间"
-            description="从写脚本、录屏、剪辑、配乐到适配不同平台，整个流程可能消耗创始人一整天甚至数天的时间"
-          />
-          <PainPointCard
-            icon={Palette}
-            title="专业壁垒之痛"
-            subtitle="我做了，但看起来很业余"
-            description="平台规则复杂、品牌感缺失、对视听语言陌生，导致营销物料看起来杂乱无章"
-          />
-          <PainPointCard
-            icon={Dice5}
-            title="结果失控之痛"
-            subtitle="工具给我的是惊喜，不是结果"
-            description="现有AI视频工具结果不可控，需要二次加工。我需要的不是创意玩具，而是能稳定交付可发布成品的生产机器"
-          />
         </div>
       </section>
 
