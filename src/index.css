@@ -37,6 +37,7 @@ All colors MUST be HSL.
     
     /* Green for testimonials section */
     --testimonial-bg: 130 65% 52%;
+    --testimonial-bg-light: 130 40% 92%;
 
     --secondary: 200 30% 96%;
     --secondary-foreground: 210 20% 15%;
