@@ -11,7 +11,7 @@ import { toast } from "sonner";
 
 const testimonials = [
   {
-    quote: "作为独立开发者，我能快速做产品，但真的不会营销。A9 帮我一键生成了 Product Hunt 的宣传片，直接省下一周时间！",
+    quote: "作为独立开发者，我能快速做产品，但真的不会营销。A9 帮我快速生成了 Product Hunt 的宣传片，直接省下一周时间！",
     author: "Alex Chen",
     role: "独立开发者 / One Person Company",
   },
@@ -229,7 +229,7 @@ const Index = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <FeatureCard
             icon={Zap}
-            title="一键生成"
+            title="快速生成"
             description="只需输入官网URL，AI自动分析产品特点，生成专业级演示视频，无需任何视频制作经验"
           />
           <FeatureCard
