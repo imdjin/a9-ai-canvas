@@ -108,27 +108,38 @@ const Index = () => {
       </section>
 
       {/* Pain Points Header */}
-      <section className="container mx-auto px-4 py-24 relative overflow-hidden">
+      <section className="container mx-auto px-4 py-20 relative overflow-hidden">
         {/* Decorative background */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent-orange/5 to-transparent pointer-events-none" />
         
-        <div className="text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-orange/10 border border-accent-orange/20 rounded-full mb-6">
-            <span className="text-sm text-accent-orange font-medium">创作者的困境</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground leading-tight">
-            产品做出来了，<br className="md:hidden" /><span className="text-accent-orange">但是怎么卖？</span>
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            用 AI 几分钟可以"做产品"，但如何"卖产品"？<br className="hidden md:block" />
-            我们如何几分钟做一个能讲好故事的产品宣传片？
-          </p>
-          
-          {/* Arrow indicator */}
-          <div className="flex justify-center animate-bounce">
-            <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left: Text content */}
+            <div className="text-center md:text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-orange/10 border border-accent-orange/20 rounded-full mb-6">
+                <span className="text-sm text-accent-orange font-medium">创作者的困境</span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground leading-tight">
+                产品做出来了，<br className="hidden md:block" /><span className="text-accent-orange">但是怎么卖？</span>
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground mb-6">
+                用 AI 几分钟可以"做产品"，但如何"卖产品"？我们如何几分钟做一个能讲好故事的产品宣传片？
+              </p>
+              
+              {/* Arrow indicator */}
+              <div className="hidden md:flex">
+                <svg className="w-6 h-6 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+            </div>
+            
+            {/* Right: Image placeholder */}
+            <div className="flex justify-center md:justify-end">
+              <div className="w-full max-w-md aspect-square bg-secondary/50 border border-border rounded-xl flex items-center justify-center">
+                <span className="text-muted-foreground text-sm">配图区域</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
