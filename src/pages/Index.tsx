@@ -263,10 +263,10 @@ const Index = () => {
       {/* CTA Section */}
       {/* Vision Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-7xl mx-auto bg-vision-bg rounded-2xl overflow-hidden">
-          <div className="grid md:grid-cols-2 items-center">
+        <div className="max-w-7xl mx-auto bg-vision-bg rounded-2xl overflow-hidden min-h-[400px] md:min-h-[500px]">
+          <div className="grid md:grid-cols-2 items-center h-full min-h-[400px] md:min-h-[500px]">
             {/* Left: Text content */}
-            <div className="text-center md:text-left p-12 md:p-16">
+            <div className="text-center md:text-left p-16 md:p-24">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
                 <Sparkles className="h-4 w-4 text-primary" />
                 <span className="text-sm text-primary font-medium">我们的愿景</span>
