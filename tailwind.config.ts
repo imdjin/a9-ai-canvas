@@ -49,16 +49,13 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-primary': 'var(--gradient-primary)',
-        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-primary': 'linear-gradient(135deg, hsl(174, 84%, 42%), hsl(188, 80%, 48%))',
+        'gradient-hero': 'linear-gradient(180deg, hsl(200, 30%, 98%), hsl(200, 20%, 96%))',
       },
       boxShadow: {
-        'glow': 'var(--shadow-glow)',
-        'card': 'var(--shadow-card)',
-        'soft': 'var(--shadow-soft)',
-      },
-      transitionTimingFunction: {
-        'smooth': 'var(--transition-smooth)',
+        'glow': '0 0 40px hsla(174, 84%, 42%, 0.15)',
+        'card': '0 10px 40px hsla(0, 0%, 0%, 0.06)',
+        'soft': '0 4px 20px hsla(0, 0%, 0%, 0.08)',
       },
       borderRadius: {
         lg: "var(--radius)",
