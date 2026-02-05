@@ -9,7 +9,7 @@ interface PainPointCardProps {
 
 export const PainPointCard = ({ icon: Icon, title, subtitle, description }: PainPointCardProps) => {
   return (
-    <div className="group p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-all">
+    <div className="group p-6 bg-card border border-border rounded-xl hover:border-primary/40 transition-all">
       <div className="flex flex-col gap-3">
         <div className="p-3 bg-primary/10 rounded-lg w-fit">
           <Icon className="h-6 w-6 text-primary" />

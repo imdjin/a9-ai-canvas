@@ -58,9 +58,9 @@ export default {
         'gradient-hero': 'linear-gradient(180deg, hsl(200, 30%, 98%), hsl(200, 20%, 96%))',
       },
       boxShadow: {
-        'glow': '0 0 40px hsla(195, 100%, 60%, 0.2)',
-        'card': '0 10px 40px hsla(0, 0%, 0%, 0.06)',
-        'soft': '0 4px 20px hsla(0, 0%, 0%, 0.08)',
+        'glow': 'none',
+        'card': 'none',
+        'soft': 'none',
       },
       borderRadius: {
         lg: "var(--radius)",
