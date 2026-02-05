@@ -195,7 +195,7 @@ const Index = () => {
           <FeatureCard
             icon={Video}
             title="多平台适配和营销物料生成"
-            description="自动适配各平台尺寸规格，还能一键生成上架所需的标题、描述、标签等辅助物料，省时省力"
+            description="自动适配Product Hunt、Youtube、Tiktok等平台尺寸规格，还能一键生成上架所需的标题、描述、标签等辅助物料，省时省力"
           />
           <FeatureCard
             icon={Rocket}
