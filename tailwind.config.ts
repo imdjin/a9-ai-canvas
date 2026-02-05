@@ -50,11 +50,12 @@ export default {
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
-        'gradient-dark': 'var(--gradient-dark)',
+        'gradient-hero': 'var(--gradient-hero)',
       },
       boxShadow: {
         'glow': 'var(--shadow-glow)',
         'card': 'var(--shadow-card)',
+        'soft': 'var(--shadow-soft)',
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',

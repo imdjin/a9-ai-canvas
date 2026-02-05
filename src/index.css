@@ -8,42 +8,43 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Black primary theme with cyan accents */
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
+    /* Light theme with cyan/teal accents - HeyGen inspired */
+    --background: 0 0% 100%;
+    --foreground: 210 20% 15%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 15%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 15%;
 
-    --primary: 188 95% 52%;
-    --primary-foreground: 0 0% 4%;
+    --primary: 174 84% 42%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 200 30% 96%;
+    --secondary-foreground: 210 20% 15%;
 
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 200 20% 96%;
+    --muted-foreground: 210 10% 45%;
 
-    --accent: 188 95% 52%;
-    --accent-foreground: 0 0% 4%;
+    --accent: 174 84% 42%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 188 95% 52%;
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 174 84% 42%;
 
     --radius: 0.5rem;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(188 95% 52%), hsl(200 95% 60%));
-    --gradient-dark: linear-gradient(180deg, hsl(0 0% 4%), hsl(0 0% 2%));
-    --shadow-glow: 0 0 40px hsl(188 95% 52% / 0.2);
+    --gradient-primary: linear-gradient(135deg, hsl(174 84% 42%), hsl(188 80% 48%));
+    --gradient-hero: linear-gradient(180deg, hsl(200 30% 98%), hsl(200 20% 96%));
+    --shadow-glow: 0 0 40px hsl(174 84% 42% / 0.15);
     --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.6);
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.08);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

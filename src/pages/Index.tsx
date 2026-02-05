@@ -4,8 +4,78 @@ import { FeatureCard } from "@/components/FeatureCard";
 import { UseCaseCard } from "@/components/UseCaseCard";
 import { PainPointCard } from "@/components/PainPointCard";
 import { SolutionCard } from "@/components/SolutionCard";
+import { TestimonialCard } from "@/components/TestimonialCard";
+import { PricingCard } from "@/components/PricingCard";
 import { Sparkles, Zap, Target, Video, Rocket, TrendingUp } from "lucide-react";
 import { toast } from "sonner";
+
+const testimonials = [
+  {
+    quote: "作为独立开发者，我能快速做产品，但真的不会营销。A9 帮我一键生成了 Product Hunt 的宣传片，直接省下一周时间！",
+    author: "Alex Chen",
+    role: "独立开发者 / One Person Company",
+  },
+  {
+    quote: "A9 太懂怎么讲产品故事了。生成的视频不仅专业，还真实展示了我的 UI 界面，投资人看完直接问估值！",
+    author: "Sarah Wang",
+    role: "初创公司创始人",
+  },
+  {
+    quote: "以前做一个产品视频要找外包，等一周，花几千块。现在用 A9 几分钟搞定，而且质量更好！",
+    author: "Mike Liu",
+    role: "创业团队产品负责人",
+  },
+  {
+    quote: "简单好上手，完全零门槛。我只输入了官网链接，A9 就帮我把产品卖点提炼得清清楚楚！",
+    author: "Emma Zhang",
+    role: "独立创业者 / OPC",
+  },
+];
+
+const pricingPlans = [
+  {
+    name: "免费版",
+    monthlyPrice: 0,
+    features: [
+      { name: "AI点数", included: "100点/月" },
+      { name: "AI生成视频数量", included: "3个" },
+      { name: "去水印导出", included: false },
+      { name: "导出清晰度", included: "720p" },
+      { name: "策划方案", included: "1套" },
+      { name: "高转化模板库", included: false },
+      { name: "品牌资产包", included: false },
+    ],
+  },
+  {
+    name: "专业版",
+    monthlyPrice: 19,
+    yearlyPrice: 199,
+    popular: true,
+    features: [
+      { name: "AI点数", included: "1000点/月" },
+      { name: "AI生成视频数量", included: "不限" },
+      { name: "去水印导出", included: true },
+      { name: "导出清晰度", included: "1080p" },
+      { name: "策划方案", included: "3套" },
+      { name: "高转化模板库", included: false },
+      { name: "品牌资产包", included: "3套" },
+    ],
+  },
+  {
+    name: "旗舰版",
+    monthlyPrice: 59,
+    yearlyPrice: 499,
+    features: [
+      { name: "AI点数", included: "5000点/月" },
+      { name: "AI生成视频数量", included: "不限" },
+      { name: "去水印导出", included: true },
+      { name: "导出清晰度", included: "1080p / 2K（可选）" },
+      { name: "策划方案", included: "3套" },
+      { name: "高转化模板库", included: true },
+      { name: "品牌资产包", included: "不限" },
+    ],
+  },
+];
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -22,12 +92,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-dark">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border/50 backdrop-blur-sm">
+      <header className="border-b border-border/50 backdrop-blur-sm bg-background/80 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">A9</span>
             </div>
             <span className="text-xl font-bold text-foreground">A9</span>
@@ -36,24 +106,25 @@ const Index = () => {
       </header>
 
       {/* Hero Section with Chat Input */}
-      <section className="container mx-auto px-4 pt-20 pb-16">
+      <section className="container mx-auto px-4 pt-16 pb-20 bg-gradient-hero">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-8">
             <Sparkles className="h-4 w-4 text-primary" />
             <span className="text-sm text-primary font-medium">AI驱动的营销视频生成器</span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-            把你的官网，
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              一键变成
+              A9，
             </span>
-            <br />
-            可投放的1分钟产品演示片
+            几分钟生成产品宣传视频
           </h1>
           
-          <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            专为独立开发者和创业团队打造，让你的产品故事在 Product Hunt、YouTube 和 TikTok 上脱颖而出
+          <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+            让你的产品故事在 Product Hunt、YouTube 和 TikTok 上脱颖而出
+          </p>
+          <p className="text-base text-muted-foreground mb-10 max-w-2xl mx-auto">
+            独立创业者、OPC、创业团队都在用的产品营销助手
           </p>
 
           <ChatInput onSubmit={handleSubmit} isLoading={isLoading} />
@@ -61,7 +132,7 @@ const Index = () => {
       </section>
 
       {/* Pain Points Section */}
-      <section className="container mx-auto px-4 py-16 bg-background/50">
+      <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-destructive/10 border border-destructive/20 rounded-full mb-6">
             <span className="text-sm text-destructive font-medium">创作者的困境</span>
@@ -103,7 +174,7 @@ const Index = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-20 bg-secondary/50">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
             <Sparkles className="h-4 w-4 text-primary" />
@@ -149,7 +220,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-foreground">为什么选择 A9？</h2>
           <p className="text-muted-foreground">解决营销视频制作的所有痛点</p>
@@ -189,8 +260,50 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="container mx-auto px-4 py-20 bg-secondary/30">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
+            <span className="text-sm text-primary font-medium">用户评价</span>
+          </div>
+          <h2 className="text-3xl font-bold mb-4 text-foreground">
+            创业者们都在用 <span className="bg-gradient-primary bg-clip-text text-transparent">A9</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            听听他们怎么说
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard key={index} {...testimonial} />
+          ))}
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
+            <span className="text-sm text-primary font-medium">价格方案</span>
+          </div>
+          <h2 className="text-3xl font-bold mb-4 text-foreground">
+            选择适合你的 <span className="bg-gradient-primary bg-clip-text text-transparent">方案</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            从免费开始，按需升级
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-start">
+          {pricingPlans.map((plan, index) => (
+            <PricingCard key={index} {...plan} />
+          ))}
+        </div>
+      </section>
+
       {/* Use Cases Section */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-20 bg-secondary/30">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-foreground">典型使用场景</h2>
           <p className="text-muted-foreground">无论何种需求，A9 都能完美胜任</p>
@@ -222,11 +335,11 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto text-center bg-card border border-border rounded-2xl p-12 shadow-card">
-          <h2 className="text-3xl font-bold mb-4 text-foreground">
+        <div className="max-w-3xl mx-auto text-center bg-gradient-primary rounded-2xl p-12 shadow-glow">
+          <h2 className="text-3xl font-bold mb-4 text-primary-foreground">
             准备好让你的产品被更多人看见了吗？
           </h2>
-          <p className="text-muted-foreground mb-8">
+          <p className="text-primary-foreground/80 mb-8">
             输入你的官网链接，立即体验 AI 驱动的营销视频生成
           </p>
           <ChatInput onSubmit={handleSubmit} isLoading={isLoading} />
@@ -234,9 +347,26 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border/50 py-8">
-        <div className="container mx-auto px-4 text-center text-muted-foreground text-sm">
-          <p>© 2024 A9. 让产品运营像产品构建一样简单。</p>
+      <footer className="border-t border-border py-12 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-sm">A9</span>
+              </div>
+              <span className="font-bold text-foreground">A9</span>
+            </div>
+            
+            <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-muted-foreground">
+              <a href="mailto:support@a9ai.ai" className="hover:text-primary transition-colors">
+                联系我们：support@a9ai.ai
+              </a>
+            </div>
+            
+            <p className="text-sm text-muted-foreground">
+              © 2024 A9. 让产品运营像产品构建一样简单。
+            </p>
+          </div>
         </div>
       </footer>
     </div>
