@@ -146,42 +146,44 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="container mx-auto px-4 py-20 bg-accent-orange">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-foreground">A9来帮你解决</h2>
-        </div>
+      <section id="features" className="container mx-auto px-4 py-20">
+        <div className="max-w-7xl mx-auto bg-accent-orange rounded-2xl p-12 md:p-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">A9来帮你解决</h2>
+          </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <FeatureCard
-            icon={Zap}
-            title="快速生成"
-            description="只需输入官网URL，AI自动分析产品特点，生成专业级演示视频，无需任何视频制作经验"
-          />
-          <FeatureCard
-            icon={Target}
-            title="精彩叙事"
-            description="基于营销框架自动构建故事脚本，确保每个视频都有吸引力、逻辑性和说服力"
-          />
-          <FeatureCard
-            icon={Rocket}
-            title="真实UI展示"
-            description="直接录制并展示你的真实产品界面，让用户看到实际功能，而非AI虚构的华丽场景，更可信、更专业"
-          />
-          <FeatureCard
-            icon={Video}
-            title="多平台适配和营销物料生成"
-            description="自动适配Product Hunt、Youtube、Tiktok等平台尺寸规格，还能一键生成上架所需的标题、描述、标签等辅助物料，省时省力"
-          />
-          <FeatureCard
-            icon={TrendingUp}
-            title="品牌一致性"
-            description="自动提取官网的品牌元素、色彩和风格，确保视频与你的品牌形象完美契合"
-          />
-          <FeatureCard
-            icon={Sparkles}
-            title="AI优化"
-            description="利用AI技术优化视频节奏、转场和视觉效果，让你的产品展示更加专业吸睛"
-          />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <FeatureCard
+              icon={Zap}
+              title="快速生成"
+              description="只需输入官网URL，AI自动分析产品特点，生成专业级演示视频，无需任何视频制作经验"
+            />
+            <FeatureCard
+              icon={Target}
+              title="精彩叙事"
+              description="基于营销框架自动构建故事脚本，确保每个视频都有吸引力、逻辑性和说服力"
+            />
+            <FeatureCard
+              icon={Rocket}
+              title="真实UI展示"
+              description="直接录制并展示你的真实产品界面，让用户看到实际功能，而非AI虚构的华丽场景，更可信、更专业"
+            />
+            <FeatureCard
+              icon={Video}
+              title="多平台适配和营销物料生成"
+              description="自动适配Product Hunt、Youtube、Tiktok等平台尺寸规格，还能一键生成上架所需的标题、描述、标签等辅助物料，省时省力"
+            />
+            <FeatureCard
+              icon={TrendingUp}
+              title="品牌一致性"
+              description="自动提取官网的品牌元素、色彩和风格，确保视频与你的品牌形象完美契合"
+            />
+            <FeatureCard
+              icon={Sparkles}
+              title="AI优化"
+              description="利用AI技术优化视频节奏、转场和视觉效果，让你的产品展示更加专业吸睛"
+            />
+          </div>
         </div>
       </section>
 
