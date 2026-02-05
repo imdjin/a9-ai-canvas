@@ -247,7 +247,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="container mx-auto px-4 py-20 bg-secondary/30">
+      <section className="container mx-auto px-4 py-20 bg-primary-soft/10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
             <span className="text-sm text-primary font-medium">用户评价</span>
@@ -288,7 +288,7 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto text-center bg-gradient-primary rounded-2xl p-12 shadow-glow">
+        <div className="max-w-3xl mx-auto text-center bg-gradient-primary-deep rounded-2xl p-12 shadow-glow">
           <h2 className="text-3xl font-bold mb-4 text-primary-foreground">
             准备好让你的产品被更多人看见了吗？
           </h2>

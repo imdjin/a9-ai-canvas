@@ -79,7 +79,7 @@
                  key={plan}
                 className={`py-4 px-6 text-center font-bold text-lg min-w-[140px] ${
                   index === 1 
-                    ? "text-primary bg-primary/15" 
+                     ? "text-primary-deep bg-primary-deep/10" 
                     : "text-foreground"
                  }`}
                >
@@ -103,7 +103,7 @@
                  <td
                    key={colIndex}
                    className={`py-4 px-6 text-center ${
-                    colIndex === 1 ? "bg-primary/15" : ""
+                    colIndex === 1 ? "bg-primary-deep/10" : ""
                    }`}
                  >
                    {renderValue(value)}
