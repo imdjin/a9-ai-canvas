@@ -263,13 +263,10 @@ const Index = () => {
           </div>
           
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              做产品用 <span className="bg-gradient-primary bg-clip-text text-transparent">Lovable</span>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+              做产品用 <span className="bg-gradient-primary bg-clip-text text-transparent">Lovable</span>，卖产品用 <span className="bg-gradient-primary bg-clip-text text-transparent">A9</span>
             </h2>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              卖产品用 <span className="bg-gradient-primary bg-clip-text text-transparent">A9</span>
-            </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground mt-8">
+            <p className="text-xl md:text-2xl text-muted-foreground">
               让卖产品像做产品一样简单
             </p>
           </div>
