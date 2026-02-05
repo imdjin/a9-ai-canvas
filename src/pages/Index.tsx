@@ -255,7 +255,7 @@ const Index = () => {
       {/* CTA Section */}
       {/* Vision Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-7xl mx-auto bg-accent-orange rounded-2xl p-14 md:p-16 text-center">
+        <div className="max-w-7xl mx-auto bg-accent-orange rounded-2xl p-20 md:p-24 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-foreground/10 border border-foreground/20 rounded-full mb-8">
             <Sparkles className="h-4 w-4 text-foreground" />
             <span className="text-sm text-foreground font-medium">我们的愿景</span>
