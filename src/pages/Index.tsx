@@ -1,4 +1,8 @@
 import { useState } from "react";
+import avatarDavid from "@/assets/avatar-david.jpg";
+import avatarJessica from "@/assets/avatar-jessica.jpg";
+import avatarRyan from "@/assets/avatar-ryan.jpg";
+import avatarEmily from "@/assets/avatar-emily.jpg";
 import { ChatInput } from "@/components/ChatInput";
 import { FeatureCard } from "@/components/FeatureCard";
 import { UseCaseCard } from "@/components/UseCaseCard";
@@ -14,21 +18,25 @@ const testimonials = [
     quote: "作为独立开发者，我能快速做产品，但真的不会营销。A9 帮我快速生成了 Product Hunt 的宣传片，直接省下一周时间！",
     author: "David Miller",
     role: "独立开发者 / One Person Company",
+    avatar: avatarDavid,
   },
   {
     quote: "A9 太懂怎么讲产品故事了。生成的视频不仅专业，还真实展示了我的 UI 界面，投资人看完直接问估值！",
     author: "Jessica Thompson",
     role: "初创公司创始人",
+    avatar: avatarJessica,
   },
   {
     quote: "以前做一个产品视频要找外包，等一周，花几千块。现在用 A9 几分钟搞定，而且质量更好！",
     author: "Ryan Anderson",
     role: "创业团队产品负责人",
+    avatar: avatarRyan,
   },
   {
     quote: "简单好上手，完全零门槛。我只输入了官网链接，A9 就帮我把产品卖点提炼得清清楚楚！",
     author: "Emily Carter",
     role: "独立创业者 / OPC",
+    avatar: avatarEmily,
   },
 ];
 
