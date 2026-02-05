@@ -28,6 +28,9 @@ All colors MUST be HSL.
     
     /* Contrast accent color */
     --accent-orange: 309 100% 82%;
+    
+    /* Light gray for vision section */
+    --vision-bg: 210 20% 96%;
 
     --secondary: 200 30% 96%;
     --secondary-foreground: 210 20% 15%;

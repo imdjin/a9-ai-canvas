@@ -4,6 +4,7 @@ import avatarJessica from "@/assets/avatar-jessica.jpg";
 import avatarRyan from "@/assets/avatar-ryan.jpg";
 import avatarEmily from "@/assets/avatar-emily.jpg";
 import painPointIllustration from "@/assets/pain-point-illustration.png";
+import visionIllustration from "@/assets/vision-illustration.png";
 import { ChatInput } from "@/components/ChatInput";
 import { FeatureCard } from "@/components/FeatureCard";
 import { UseCaseCard } from "@/components/UseCaseCard";
@@ -258,19 +259,31 @@ const Index = () => {
       {/* CTA Section */}
       {/* Vision Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-7xl mx-auto bg-accent-orange rounded-2xl p-20 md:p-24 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-foreground/10 border border-foreground/20 rounded-full mb-8">
-            <Sparkles className="h-4 w-4 text-foreground" />
-            <span className="text-sm text-foreground font-medium">我们的愿景</span>
-          </div>
-          
-          <div className="space-y-6">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-              做产品用 <span className="text-foreground font-black">Lovable</span>，卖产品用 <span className="text-foreground font-black">A9</span>
-            </h2>
-            <p className="text-lg md:text-xl text-foreground/80">
-              让卖产品像做产品一样简单
-            </p>
+        <div className="max-w-7xl mx-auto bg-vision-bg rounded-2xl p-12 md:p-16">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: Text content */}
+            <div className="text-center md:text-left md:pl-6 lg:pl-10">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
+                <Sparkles className="h-4 w-4 text-primary" />
+                <span className="text-sm text-primary font-medium">我们的愿景</span>
+              </div>
+              
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-foreground leading-tight">
+                做产品用 <span className="text-primary font-black">Lovable</span>，卖产品用 <span className="text-primary font-black">A9</span>
+              </h2>
+              <p className="text-base md:text-lg lg:text-xl text-muted-foreground">
+                让卖产品像做产品一样简单
+              </p>
+            </div>
+            
+            {/* Right: Image */}
+            <div className="flex justify-center md:justify-end md:pr-6 lg:pr-10">
+              <img 
+                src={visionIllustration} 
+                alt="抽象流动丝带装饰图" 
+                className="w-full max-w-lg lg:max-w-xl rounded-2xl object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

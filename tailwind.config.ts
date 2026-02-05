@@ -43,6 +43,9 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
           orange: "hsl(var(--accent-orange))",
         },
+        vision: {
+          bg: "hsl(var(--vision-bg))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
