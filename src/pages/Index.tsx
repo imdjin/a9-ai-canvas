@@ -108,27 +108,24 @@ const Index = () => {
       </section>
 
       {/* Pain Points Header */}
-      <section className="container mx-auto px-4 py-20 relative overflow-hidden">
-        {/* Decorative background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent-orange/5 to-transparent pointer-events-none" />
-        
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="container mx-auto px-4 py-20">
+        <div className="max-w-6xl mx-auto bg-primary rounded-2xl p-10 md:p-14">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
             {/* Left: Text content */}
             <div className="text-center md:text-left">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-orange/10 border border-accent-orange/20 rounded-full mb-6">
-                <span className="text-sm text-accent-orange font-medium">创作者的困境</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-foreground/10 border border-foreground/20 rounded-full mb-6">
+                <span className="text-sm text-foreground font-medium">创作者的困境</span>
               </div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground leading-tight">
-                产品做出来了，<br className="hidden md:block" /><span className="text-accent-orange">但是怎么卖？</span>
+                产品做出来了，<br className="hidden md:block" /><span className="text-foreground">但是怎么卖？</span>
               </h2>
-              <p className="text-base md:text-lg text-muted-foreground mb-6">
+              <p className="text-base md:text-lg text-foreground/80 mb-6">
                 用 AI 几分钟可以"做产品"，但如何"卖产品"？我们如何几分钟做一个能讲好故事的产品宣传片？
               </p>
               
               {/* Arrow indicator */}
               <div className="hidden md:flex">
-                <svg className="w-6 h-6 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-foreground animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
               </div>
@@ -136,8 +133,8 @@ const Index = () => {
             
             {/* Right: Image placeholder */}
             <div className="flex justify-center md:justify-end">
-              <div className="w-full max-w-md aspect-square bg-secondary/50 border border-border rounded-xl flex items-center justify-center">
-                <span className="text-muted-foreground text-sm">配图区域</span>
+              <div className="w-full max-w-md aspect-square bg-foreground/10 rounded-xl flex items-center justify-center">
+                <span className="text-foreground/60 text-sm">配图区域</span>
               </div>
             </div>
           </div>
