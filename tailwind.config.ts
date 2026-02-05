@@ -49,11 +49,11 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, hsl(174, 84%, 42%), hsl(188, 80%, 48%))',
+        'gradient-primary': 'linear-gradient(135deg, hsl(195, 100%, 60%), hsl(200, 100%, 65%))',
         'gradient-hero': 'linear-gradient(180deg, hsl(200, 30%, 98%), hsl(200, 20%, 96%))',
       },
       boxShadow: {
-        'glow': '0 0 40px hsla(174, 84%, 42%, 0.15)',
+        'glow': '0 0 40px hsla(195, 100%, 60%, 0.2)',
         'card': '0 10px 40px hsla(0, 0%, 0%, 0.06)',
         'soft': '0 4px 20px hsla(0, 0%, 0%, 0.08)',
       },
