@@ -5,7 +5,7 @@ import { UseCaseCard } from "@/components/UseCaseCard";
 import { PainPointCard } from "@/components/PainPointCard";
 import { SolutionCard } from "@/components/SolutionCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
-import { PricingCard } from "@/components/PricingCard";
+import { PricingTable } from "@/components/PricingTable";
 import { Sparkles, Zap, Target, Video, Rocket, TrendingUp } from "lucide-react";
 import { toast } from "sonner";
 
@@ -29,51 +29,6 @@ const testimonials = [
     quote: "简单好上手，完全零门槛。我只输入了官网链接，A9 就帮我把产品卖点提炼得清清楚楚！",
     author: "Emma Zhang",
     role: "独立创业者 / OPC",
-  },
-];
-
-const pricingPlans = [
-  {
-    name: "免费版",
-    monthlyPrice: 0,
-    features: [
-      { name: "AI点数", included: "100点/月" },
-      { name: "AI生成视频数量", included: "3个" },
-      { name: "去水印导出", included: false },
-      { name: "导出清晰度", included: "720p" },
-      { name: "策划方案", included: "1套" },
-      { name: "高转化模板库", included: false },
-      { name: "品牌资产包", included: false },
-    ],
-  },
-  {
-    name: "专业版",
-    monthlyPrice: 19,
-    yearlyPrice: 199,
-    popular: true,
-    features: [
-      { name: "AI点数", included: "1000点/月" },
-      { name: "AI生成视频数量", included: "不限" },
-      { name: "去水印导出", included: true },
-      { name: "导出清晰度", included: "1080p" },
-      { name: "策划方案", included: "3套" },
-      { name: "高转化模板库", included: false },
-      { name: "品牌资产包", included: "3套" },
-    ],
-  },
-  {
-    name: "旗舰版",
-    monthlyPrice: 59,
-    yearlyPrice: 499,
-    features: [
-      { name: "AI点数", included: "5000点/月" },
-      { name: "AI生成视频数量", included: "不限" },
-      { name: "去水印导出", included: true },
-      { name: "导出清晰度", included: "1080p / 2K（可选）" },
-      { name: "策划方案", included: "3套" },
-      { name: "高转化模板库", included: true },
-      { name: "品牌资产包", included: "不限" },
-    ],
   },
 ];
 
@@ -295,10 +250,8 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-start">
-          {pricingPlans.map((plan, index) => (
-            <PricingCard key={index} {...plan} />
-          ))}
+        <div className="max-w-5xl mx-auto bg-card border border-border rounded-2xl shadow-soft overflow-hidden">
+          <PricingTable />
         </div>
       </section>
 
