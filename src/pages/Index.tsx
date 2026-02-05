@@ -219,23 +219,25 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="container mx-auto px-4 py-20 bg-primary-soft/10">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
-            <span className="text-sm text-primary font-medium">用户评价</span>
+      <section id="testimonials" className="container mx-auto px-4 py-20">
+        <div className="max-w-7xl mx-auto bg-testimonial-bg rounded-2xl p-12 md:p-16">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-foreground/10 border border-foreground/20 rounded-full mb-6">
+              <span className="text-sm text-foreground font-medium">用户评价</span>
+            </div>
+            <h2 className="text-3xl font-bold mb-4 text-foreground">
+              创业者们都在用 <span className="text-foreground font-black">A9</span>
+            </h2>
+            <p className="text-foreground/80 max-w-2xl mx-auto">
+              听听他们怎么说
+            </p>
           </div>
-          <h2 className="text-3xl font-bold mb-4 text-foreground">
-            创业者们都在用 <span className="bg-gradient-primary bg-clip-text text-transparent">A9</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            听听他们怎么说
-          </p>
-        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard key={index} {...testimonial} />
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <TestimonialCard key={index} {...testimonial} />
+            ))}
+          </div>
         </div>
       </section>
 
