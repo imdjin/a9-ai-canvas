@@ -220,7 +220,7 @@ const Index = () => {
 
       {/* Testimonials Section */}
       <section id="testimonials" className="container mx-auto px-4 py-20">
-        <div className="max-w-7xl mx-auto bg-testimonial-bg rounded-2xl p-12 md:p-16">
+        <div className="max-w-7xl mx-auto bg-vision-bg rounded-2xl p-12 md:p-16">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-foreground/10 border border-foreground/20 rounded-full mb-6">
               <span className="text-sm text-foreground font-medium">用户评价</span>
