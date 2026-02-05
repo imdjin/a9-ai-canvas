@@ -17,8 +17,8 @@
            {avatar || author.charAt(0)}
          </div>
          <div>
-           <p className="font-semibold text-foreground">{author}</p>
-           <p className="text-sm text-muted-foreground">{role}</p>
+          <p className="text-xs font-medium text-foreground">{author}</p>
+          <p className="text-[10px] text-muted-foreground">{role}</p>
          </div>
        </div>
      </div>
