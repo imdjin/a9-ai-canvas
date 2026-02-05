@@ -31,6 +31,9 @@ All colors MUST be HSL.
     
     /* Light gray for vision section */
     --vision-bg: 210 20% 96%;
+    
+    /* Deep purple for feature icons */
+    --feature-icon: 280 60% 35%;
 
     --secondary: 200 30% 96%;
     --secondary-foreground: 210 20% 15%;

@@ -46,6 +46,9 @@ export default {
         vision: {
           bg: "hsl(var(--vision-bg))",
         },
+        feature: {
+          icon: "hsl(var(--feature-icon))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
