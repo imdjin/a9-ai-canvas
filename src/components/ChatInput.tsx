@@ -34,7 +34,7 @@ export const ChatInput = ({ onSubmit, isLoading }: ChatInputProps) => {
           type="submit"
           size="lg"
           disabled={isLoading || !url.trim()}
-          className="h-14 px-8 bg-accent-orange hover:bg-accent-orange/90 text-primary-foreground transition-all"
+          className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground transition-all"
         >
           <Send className="h-5 w-5" />
         </Button>
