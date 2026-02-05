@@ -107,6 +107,21 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Pain Points Header */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-orange/10 border border-accent-orange/20 rounded-full mb-6">
+            <span className="text-sm text-accent-orange font-medium">创作者的困境</span>
+          </div>
+          <h2 className="text-3xl font-bold mb-4 text-foreground">
+            产品做出来了，<span className="text-accent-orange">但是怎么卖？</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            用AI几分钟可以"做产品"，但如何"卖产品"？我们如何几分钟做一个能讲好故事的产品宣传片？
+          </p>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section id="features" className="container mx-auto px-4 py-20 bg-secondary/50">
         <div className="text-center mb-12">
