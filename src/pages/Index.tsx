@@ -254,6 +254,29 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
+      {/* Vision Section */}
+      <section className="container mx-auto px-4 py-24 bg-secondary/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-8">
+            <Sparkles className="h-4 w-4 text-primary" />
+            <span className="text-sm text-primary font-medium">我们的愿景</span>
+          </div>
+          
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+              做产品用 <span className="bg-gradient-primary bg-clip-text text-transparent">Lovable</span>
+            </h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+              卖产品用 <span className="bg-gradient-primary bg-clip-text text-transparent">A9</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground mt-8">
+              让卖产品像做产品一样简单
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="max-w-3xl mx-auto text-center bg-gradient-primary-deep rounded-2xl p-12 shadow-glow">
           <h2 className="text-3xl font-bold mb-4 text-primary-foreground">
