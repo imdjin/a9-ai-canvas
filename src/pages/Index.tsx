@@ -91,7 +91,7 @@ const Index = () => {
             <span className="text-sm text-primary font-medium">AI驱动的营销视频生成器</span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-thin mb-6 text-foreground leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               A9，
             </span>
@@ -275,8 +275,8 @@ const Index = () => {
               <p className="text-xl md:text-2xl text-muted-foreground mb-4">
                 做产品用 <span className="text-foreground font-bold">Lovable</span>
               </p>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground leading-tight">
-                卖产品用 <span className="text-primary font-black">A9</span>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-thin mb-6 text-foreground leading-tight">
+                卖产品用 <span className="text-primary font-thin">A9</span>
               </h2>
               <p className="text-base md:text-lg lg:text-xl text-muted-foreground">
                 让卖产品像做产品一样简单
