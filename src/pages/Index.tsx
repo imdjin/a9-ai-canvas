@@ -193,14 +193,14 @@ const Index = () => {
             description="基于营销框架自动构建故事脚本，确保每个视频都有吸引力、逻辑性和说服力"
           />
           <FeatureCard
-            icon={Video}
-            title="多平台适配和营销物料生成"
-            description="自动适配Product Hunt、Youtube、Tiktok等平台尺寸规格，还能一键生成上架所需的标题、描述、标签等辅助物料，省时省力"
-          />
-          <FeatureCard
             icon={Rocket}
             title="真实UI展示"
             description="直接录制并展示你的真实产品界面，让用户看到实际功能，而非AI虚构的华丽场景，更可信、更专业"
+          />
+          <FeatureCard
+            icon={Video}
+            title="多平台适配和营销物料生成"
+            description="自动适配Product Hunt、Youtube、Tiktok等平台尺寸规格，还能一键生成上架所需的标题、描述、标签等辅助物料，省时省力"
           />
           <FeatureCard
             icon={TrendingUp}
