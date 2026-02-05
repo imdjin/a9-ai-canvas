@@ -199,8 +199,8 @@ const Index = () => {
           />
           <FeatureCard
             icon={Rocket}
-            title="秒级交付"
-            description="从输入URL到获得成品视频，整个流程不超过2分钟，极大节省你的时间成本"
+            title="真实UI展示"
+            description="直接录制并展示你的真实产品界面，让用户看到实际功能，而非AI虚构的华丽场景，更可信、更专业"
           />
           <FeatureCard
             icon={TrendingUp}
