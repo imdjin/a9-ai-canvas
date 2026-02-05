@@ -284,7 +284,7 @@ const Index = () => {
             </div>
             
             <p className="text-sm text-muted-foreground">
-              © 2024 A9. 让产品运营像产品构建一样简单。
+              © 2026 A9，卖产品像做产品一样简单。
             </p>
           </div>
         </div>
