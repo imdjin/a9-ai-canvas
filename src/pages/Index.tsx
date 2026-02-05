@@ -189,7 +189,7 @@ const Index = () => {
           />
           <FeatureCard
             icon={Target}
-            title="精准叙事"
+            title="精彩叙事"
             description="基于营销框架自动构建故事脚本，确保每个视频都有吸引力、逻辑性和说服力"
           />
           <FeatureCard
