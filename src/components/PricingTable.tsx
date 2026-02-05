@@ -77,8 +77,10 @@
              {plans.map((plan, index) => (
                <th
                  key={plan}
-                 className={`py-4 px-6 text-center font-bold text-lg min-w-[140px] ${
-                   index === 1 ? "text-primary" : "text-foreground"
+                className={`py-4 px-6 text-center font-bold text-lg min-w-[140px] ${
+                  index === 1 
+                    ? "text-primary bg-primary/15" 
+                    : "text-foreground"
                  }`}
                >
                  {plan}
@@ -101,7 +103,7 @@
                  <td
                    key={colIndex}
                    className={`py-4 px-6 text-center ${
-                     colIndex === 1 ? "bg-primary/5" : ""
+                    colIndex === 1 ? "bg-primary/15" : ""
                    }`}
                  >
                    {renderValue(value)}
