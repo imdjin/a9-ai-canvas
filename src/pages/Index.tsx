@@ -110,17 +110,17 @@ const Index = () => {
 
       {/* Pain Points Header */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-4xl mx-auto bg-primary rounded-2xl p-10 md:p-12">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="max-w-7xl mx-auto bg-primary rounded-2xl p-12 md:p-16">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Text content */}
-            <div className="text-center md:text-left md:pl-4">
+            <div className="text-center md:text-left md:pl-6 lg:pl-10">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-foreground/10 border border-foreground/20 rounded-full mb-6">
                 <span className="text-sm text-foreground font-medium">创作者的困境</span>
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground leading-tight">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-foreground leading-tight">
                 产品做出来了，<br className="hidden md:block" /><span className="text-foreground">但是怎么卖？</span>
               </h2>
-              <p className="text-base md:text-lg text-foreground/80 mb-6">
+              <p className="text-base md:text-lg lg:text-xl text-foreground/80 mb-8">
                 用 AI 几分钟可以"做产品"，但如何"卖产品"？我们如何几分钟做一个能讲好故事的产品宣传片？
               </p>
               
@@ -132,12 +132,12 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Right: Image placeholder */}
-            <div className="flex justify-center md:justify-end">
+            {/* Right: Image */}
+            <div className="flex justify-center md:justify-end md:pr-6 lg:pr-10">
               <img 
                 src={painPointIllustration} 
                 alt="创作者在营销方面遇到的困境" 
-                className="w-full max-w-md rounded-xl object-cover"
+                className="w-full max-w-lg lg:max-w-xl rounded-2xl object-cover shadow-lg"
               />
             </div>
           </div>
