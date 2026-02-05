@@ -26,8 +26,8 @@ All colors MUST be HSL.
     --primary-warm: 170 70% 50%;
     --primary-soft: 210 60% 70%;
     
-    /* Contrast accent color */
-    --accent-orange: 309 100% 82%;
+    /* Contrast accent color - System Pink */
+    --accent-orange: 309 80% 92%;
     
     /* Light gray for vision section */
     --vision-bg: 210 20% 96%;
