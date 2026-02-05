@@ -208,8 +208,7 @@ const Index = () => {
       {/* Features Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-foreground">为什么选择 A9？</h2>
-          <p className="text-muted-foreground">解决营销视频制作的所有痛点</p>
+          <h2 className="text-3xl font-bold mb-4 text-foreground">A9来帮你解决</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
