@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Send } from "lucide-react";
 
 interface ChatInputProps {
-  onSubmit: (url: string) => void;
+  onSubmit?: (url: string) => void;
   isLoading?: boolean;
 }
 
@@ -14,8 +14,9 @@ export const ChatInput = ({ onSubmit, isLoading }: ChatInputProps) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (url.trim()) {
-      onSubmit(url.trim());
-      setUrl("");
+      const targetUrl = `https://app.a9app.cn?url=${encodeURIComponent(url.trim())}`;
+      window.open(targetUrl, "_self");
+      onSubmit?.(url.trim());
     }
   };
 
