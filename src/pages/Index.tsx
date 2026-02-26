@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHmsr } from "@/hooks/use-hmsr";
 import avatarDavid from "@/assets/avatar-david.jpg";
 import avatarJessica from "@/assets/avatar-jessica.jpg";
 import avatarRyan from "@/assets/avatar-ryan.jpg";
@@ -42,6 +43,7 @@ const testimonials = [
 ];
 
 const Index = () => {
+  useHmsr();
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (url: string) => {
