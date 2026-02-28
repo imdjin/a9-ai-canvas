@@ -327,9 +327,12 @@ const Index = () => {
               </a>
             </div>
             
-            <p className="text-sm text-muted-foreground">
-              © 2026 A9，卖产品像做产品一样简单。
-            </p>
+            <div className="text-sm text-muted-foreground text-center md:text-right">
+              <p>© 2026 A9，卖产品像做产品一样简单。</p>
+              <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                蜀ICP备2024070746号
+              </a>
+            </div>
           </div>
         </div>
       </footer>
