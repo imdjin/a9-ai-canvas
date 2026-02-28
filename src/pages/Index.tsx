@@ -311,27 +311,20 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">A9</span>
-              </div>
-              <span className="font-bold text-foreground">A9</span>
+      <footer className="border-t border-border py-4 bg-secondary/30">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-2 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <div className="w-6 h-6 bg-gradient-primary rounded-md flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-xs">A9</span>
             </div>
-            
-            <a href="mailto:support@a9ai.ai" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              联系我们：support@a9ai.ai
-            </a>
-            
-            <div className="flex items-center gap-3 text-sm text-muted-foreground">
-              <span>© 2026 A9</span>
-              <span>·</span>
-              <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                蜀ICP备2024070746号
-              </a>
-            </div>
+            <span className="font-bold text-foreground">A9</span>
+            <span className="hidden md:inline">·</span>
+            <a href="mailto:support@a9ai.ai" className="hover:text-primary transition-colors">support@a9ai.ai</a>
+          </div>
+          <div className="flex items-center gap-3">
+            <span>© 2026 A9</span>
+            <span>·</span>
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">蜀ICP备2024070746号</a>
           </div>
         </div>
       </footer>
