@@ -312,19 +312,20 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="border-t border-border py-4 bg-secondary/30">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-2 text-sm text-muted-foreground">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-gradient-primary rounded-md flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xs">A9</span>
+        <div className="container mx-auto px-4 flex flex-col gap-2 text-sm text-muted-foreground">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <div className="w-6 h-6 bg-gradient-primary rounded-md flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-xs">A9</span>
+              </div>
+              <span className="font-bold text-foreground">A9</span>
+              <span className="hidden md:inline">·</span>
+              <a href="mailto:support@a9ai.ai" className="hover:text-primary transition-colors">support@a9ai.ai</a>
             </div>
-            <span className="font-bold text-foreground">A9</span>
-            <span className="hidden md:inline">·</span>
-            <a href="mailto:support@a9ai.ai" className="hover:text-primary transition-colors">support@a9ai.ai</a>
-          </div>
-          <div className="flex items-center gap-3">
             <span>© 2026 A9</span>
-            <span>·</span>
-            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">蜀ICP备2024070746号</a>
+          </div>
+          <div className="text-center">
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-xs">蜀ICP备2024070746号</a>
           </div>
         </div>
       </footer>
