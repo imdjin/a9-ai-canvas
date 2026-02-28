@@ -311,9 +311,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-12 bg-secondary/30">
+      <footer className="border-t border-border py-8 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col items-center gap-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm">A9</span>
@@ -321,14 +321,13 @@ const Index = () => {
               <span className="font-bold text-foreground">A9</span>
             </div>
             
-            <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-muted-foreground">
-              <a href="mailto:support@a9ai.ai" className="hover:text-primary transition-colors">
-                联系我们：support@a9ai.ai
-              </a>
-            </div>
+            <a href="mailto:support@a9ai.ai" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              联系我们：support@a9ai.ai
+            </a>
             
-            <div className="text-sm text-muted-foreground text-center md:text-right">
-              <p>© 2026 A9，卖产品像做产品一样简单。</p>
+            <div className="flex items-center gap-3 text-sm text-muted-foreground">
+              <span>© 2026 A9</span>
+              <span>·</span>
               <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 蜀ICP备2024070746号
               </a>
